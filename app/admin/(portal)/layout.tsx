@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const user = await requireAdminPage();
-  if (user.accountStatus !== "ACTIVE") redirect("/admin/login");
+  if (user.accountStatus !== "ACTIVE") redirect("/login");
   return (
     <AdminShell user={{ fullName: user.fullName, email: user.email, role: user.role as StaffRole }}>
       {children}
