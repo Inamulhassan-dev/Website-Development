@@ -3,10 +3,16 @@ services:
     name: umar-baig-platform
     runtime: node
     plan: free
+    region: oregon
     rootDir: .
-    buildCommand: npm run build
-    startCommand: npm start
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:hosted
+    healthCheckPath: /
     envVars:
+      - key: NODE_VERSION
+        value: 22.11.0
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
       - key: NEXT_PUBLIC_APP_URL
         value: https://umar-baig-platform.onrender.com
       - key: SESSION_TTL_DAYS
@@ -25,3 +31,6 @@ services:
 databases:
   - name: umar-baig-db
     plan: free
+    region: oregon
+    databaseName: umarbaig
+    user: umarbaig

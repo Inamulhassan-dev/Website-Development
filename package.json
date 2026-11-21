@@ -8,6 +8,7 @@
     "dev:db": "tsx scripts/pglite-server.ts",
     "build": "next build",
     "start": "next start",
+    "start:hosted": "tsx scripts/deploy-init.ts && next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "db:migrate": "tsx scripts/migrate.ts",
@@ -29,7 +30,9 @@
     "react-dom": "19.1.1",
     "recharts": "3.11.0",
     "tailwind-merge": "3.3.1",
-    "zod": "4.1.12"
+    "zod": "4.1.12",
+    "dotenv": "17.2.3",
+    "tsx": "4.20.6"
   },
   "devDependencies": {
     "@electric-sql/pglite": "0.3.2",
@@ -39,9 +42,7 @@
     "@types/pg": "8.15.5",
     "@types/react": "19.1.9",
     "@types/react-dom": "19.1.7",
-    "dotenv": "17.2.3",
     "tailwindcss": "4.3.5",
-    "tsx": "4.20.6",
     "typescript": "5.9.3",
     "vitest": "3.2.4"
   }
