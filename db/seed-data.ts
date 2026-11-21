@@ -90,11 +90,11 @@ const bundles = [
 const completedSessions: Array<{ member: string; ad: string; days: number }> = [
   { member: "m01", ad: "adv_seed_01", days: 21 },
   { member: "m01", ad: "adv_seed_02", days: 14 },
-  { member: "m01", ad: "adv_seed_03", days: 7 },
+  { member: "m01", ad: "adv_seed_03", days: 2 },
   { member: "m01", ad: "adv_seed_04", days: 23 },
   { member: "m01", ad: "adv_seed_05", days: 22 },
   { member: "m01", ad: "adv_seed_11", days: 20 },
-  { member: "m01", ad: "adv_seed_12", days: 19 },
+  { member: "m01", ad: "adv_seed_12", days: 1 },
   { member: "m02", ad: "adv_seed_01", days: 18 },
   { member: "m02", ad: "adv_seed_04", days: 9 },
   { member: "m03", ad: "adv_seed_02", days: 16 },
